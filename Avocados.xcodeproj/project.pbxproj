@@ -8,21 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3B56611D2AF814910012D200 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56611C2AF814910012D200 /* AvocadosApp.swift */; };
-		3B56611F2AF814910012D200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56611E2AF814910012D200 /* ContentView.swift */; };
 		3B5661212AF814920012D200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5661202AF814920012D200 /* Assets.xcassets */; };
 		3B5661242AF814920012D200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5661232AF814920012D200 /* Preview Assets.xcassets */; };
-		3B5661262AF814920012D200 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5661252AF814920012D200 /* Persistence.swift */; };
-		3B5661292AF814920012D200 /* Avocados.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B5661272AF814920012D200 /* Avocados.xcdatamodeld */; };
+		3B5661352AF815650012D200 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5661342AF815650012D200 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B5661192AF814910012D200 /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B56611C2AF814910012D200 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
-		3B56611E2AF814910012D200 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B5661202AF814920012D200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5661232AF814920012D200 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3B5661252AF814920012D200 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3B5661282AF814920012D200 /* Avocados.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Avocados.xcdatamodel; sourceTree = "<group>"; };
+		3B5661342AF815650012D200 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3B5661362AF815EF0012D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +52,10 @@
 		3B56611B2AF814910012D200 /* Avocados */ = {
 			isa = PBXGroup;
 			children = (
+				3B5661362AF815EF0012D200 /* Info.plist */,
 				3B56611C2AF814910012D200 /* AvocadosApp.swift */,
-				3B56611E2AF814910012D200 /* ContentView.swift */,
-				3B5661202AF814920012D200 /* Assets.xcassets */,
-				3B5661252AF814920012D200 /* Persistence.swift */,
-				3B5661272AF814920012D200 /* Avocados.xcdatamodeld */,
+				3B56612F2AF814DC0012D200 /* View */,
+				3B5661332AF814FF0012D200 /* Supporting */,
 				3B5661222AF814920012D200 /* Preview Content */,
 			);
 			path = Avocados;
@@ -71,6 +67,30 @@
 				3B5661232AF814920012D200 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B56612F2AF814DC0012D200 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B5661302AF814EB0012D200 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B5661302AF814EB0012D200 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B5661342AF815650012D200 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B5661332AF814FF0012D200 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3B5661202AF814920012D200 /* Assets.xcassets */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5661262AF814920012D200 /* Persistence.swift in Sources */,
-				3B5661292AF814920012D200 /* Avocados.xcdatamodeld in Sources */,
-				3B56611F2AF814910012D200 /* ContentView.swift in Sources */,
 				3B56611D2AF814910012D200 /* AvocadosApp.swift in Sources */,
+				3B5661352AF815650012D200 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +301,9 @@
 				DEVELOPMENT_TEAM = MP9J987NN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,9 +330,9 @@
 				DEVELOPMENT_TEAM = MP9J987NN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -352,19 +370,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3B5661272AF814920012D200 /* Avocados.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3B5661282AF814920012D200 /* Avocados.xcdatamodel */,
-			);
-			currentVersion = 3B5661282AF814920012D200 /* Avocados.xcdatamodel */;
-			path = Avocados.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3B5661112AF814910012D200 /* Project object */;
 }
