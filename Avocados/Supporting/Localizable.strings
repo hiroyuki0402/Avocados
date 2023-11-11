@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Avocados
+
+  Created by SHIRAISHI HIROYUKI on 2023/11/11.
+  
+*/
+
+// MARK: - Common
+
+
+// MARK: - AvocadosView
+AvocadosMessage = "クリーミーでグリーンで栄養たっぷり！アボカドはどんな食事にも欠かせない食材です。\n朝食、ランチ、ディナーなどに厳選したアボカドのレシピをお楽しみください。";
