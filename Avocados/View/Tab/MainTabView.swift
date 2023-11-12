@@ -19,13 +19,13 @@ struct MainTabView: View {
                     Text("Acocados")
                 }
 
-            RipeningView()
+            RecipeView()
                 .tabItem {
                     Image(.tabiconBook)
                     Text("Recipe")
                 }
 
-            RipeningView()
+            RipeningStagesView()
                 .tabItem {
                     Image(.tabiconAvocado)
                     Text("Ripening")
