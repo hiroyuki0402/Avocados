@@ -12,7 +12,7 @@ struct AvocadosApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainTabView()
         }
     }
 }

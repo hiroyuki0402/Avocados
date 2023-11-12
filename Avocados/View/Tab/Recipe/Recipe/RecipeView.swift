@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RipeningView: View {
+struct RecipeView: View {
     // MARK: - プロパティー
 
     /// ヘッダーのViewModel
@@ -15,6 +15,9 @@ struct RipeningView: View {
 
     /// アボカドの事実のViewModel
     @StateObject private var factsViewModel = FactsViewModel()
+
+
+    @StateObject private var recipeViewModel = RecipeViewModel()
 
     // MARK: - ボディー
     var body: some View {
@@ -32,6 +35,10 @@ struct RipeningView: View {
                 /// 事実
                 factsTitle
                 facts
+
+                /// レシピー
+                recipeTitle
+                recipe
 
                 /// フッター
                 footerItems
@@ -52,7 +59,7 @@ struct RipeningView: View {
 }
 
 
-private extension RipeningView {
+private extension RecipeView {
 
     // MARK: - Header
 
@@ -103,6 +110,23 @@ private extension RipeningView {
 
     }
 
+    // MARK: - Recipe
+    private var recipeTitle: some View {
+        Text("Avocado Recipe")
+          .fontWeight(.bold)
+          .modifier(TitleModiFier())
+    }
+
+    private var recipe: some View {
+        VStack(alignment: .center, spacing: 20) {
+            ForEach(recipeViewModel.recipeDatas) { data in
+                RecipeCardView(recipeData: data)
+            }
+        }
+        .frame(maxWidth: 640)
+        .padding(.horizontal)
+    }
+
 
     // MARK: - Footer
 
@@ -130,5 +154,5 @@ private extension RipeningView {
 }
 
 #Preview {
-    RipeningView()
+    RecipeView()
 }

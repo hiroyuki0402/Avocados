@@ -14,33 +14,33 @@ func HeaderTestDatas() -> HeaderDatas {
     return [
         HeaderData(
             image: "avocado-slice-1",
-            headline: "Avocados",
-            subheadline: "Avocados are a powerhouse ingredient at any meal for anyone."
+            headline: "アボカド",
+            subheadline: "アボカドは誰にとってもどんな食事にも欠かせない食材です."
         ),
         HeaderData(
             image: "avocado-slice-2",
-            headline: "Healthy",
-            subheadline: "Avocados are good for us and they can be part of our healthy diet."
+            headline: "健康",
+            subheadline: "アボカドは体に良いので、健康的な食事の一部になります"
         ),
         HeaderData(
             image: "avocado-slice-3",
-            headline: "Nutrients",
-            subheadline: "Avocados have a surprising amount and diversity of vitamins and minerals."
+            headline: "栄養素",
+            subheadline: "アボカドには、驚くべき量と多様性のビタミンとミネラルが含まれています"
         ),
         HeaderData(
             image: "avocado-slice-4",
-            headline: "Delicious",
-            subheadline: "Craving more guacamole? Find the best guacamole recipes in the app."
+            headline: "味わい",
+            subheadline: "もっとワカモレを食べたいですか？アプリで最高のワカモレのレシピを見つけてください"
         ),
         HeaderData(
             image: "avocado-slice-5",
-            headline: "Tasty",
-            subheadline: "Avocados are a good source of natural fiber, which making you feel full."
+            headline: "味",
+            subheadline: "アボカドは天然繊維の優れた供給源であり、満腹感をもたらします"
         ),
         HeaderData(
             image: "avocado-slice-6",
-            headline: "Recipes",
-            subheadline: "Enjoy these carefully handpicked avocado recipes for every occasion!"
+            headline: "レシピ",
+            subheadline: "あらゆる機会に厳選したアボカドのレシピをお楽しみください!"
         )
     ]
 }
